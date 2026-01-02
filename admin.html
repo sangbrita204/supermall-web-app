@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Admin Panel</title>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/admin.js"></script>
 </head>
 <body>
-  <h2>Admin Dashboard</h2>
+
+<div class="container">
+  <header>
+    <h1>Admin Dashboard</h1>
+    <p>Manage shops, categories and offers</p>
+  </header>
 
   <h3>Create Shop</h3>
   <input id="shopName" placeholder="Shop Name">
-  <input id="floor" placeholder="Floor No">
+  <input id="floor" placeholder="Floor Number">
   <input id="category" placeholder="Category">
   <button onclick="addShop()">Add Shop</button>
 
@@ -17,5 +23,7 @@
   <input id="offerShop" placeholder="Shop Name">
   <input id="offerText" placeholder="Offer Details">
   <button onclick="addOffer()">Add Offer</button>
+</div>
+
 </body>
 </html>
